@@ -1,0 +1,46 @@
+body {
+
+}
+
+div.background {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: antiquewhite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#loader {
+    height: 150px;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border: 10px solid white;
+    animation-name: loader;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+div#loader-small {
+    height: 80px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border: 8px solid white;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
